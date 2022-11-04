@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 15vh;
+  background-color: rgb(204, 87, 9);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0 2px 15px black;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  font-weight: bold;
+  gap: 3rem;
+  align-items: center;
+  list-style: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  color: rgb(215, 241, 215);
+}
+
+.page {
+  padding: 2em;
+}
+
+/* HOME PAGE */
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.post-item {
+  box-shadow: 0 2px 15px black;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-item h1 {
+  font-size: 1.5em;
+}
+
+.post-item-username {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/* POST PAGE */
+.postpage {
+  background-color: white;
+  box-shadow: 0 2px 15px black;
+  padding: 10px;
+}
+
+.comment {
+  border-top: 1px solid rgb(223, 217, 217);
+}
+
+
+/* SIGNUP PAGE */
+.form-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 1em;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+form input[type='text'],
+form input[type='password'],
+form textarea {
+  padding: 5px;
+  font-size: 1.2em;
+  border: 2px solid black;
+}
+
+.checkbox-label {
+  display: inline;
+}
+
+.error {
+  color: red;
+}
+
+.form-button {
+  padding: 5px;
+  font-size: 1.2em;
+  background-color: rgb(204, 87, 9);
+  color: white;
+  font-weight: bold;
+}
+
+.form-button:hover {
+  background-color: rgb(226, 144, 89);
+}
+
+.form-button:disabled {
+  background-color: rgb(207, 183, 167);
+}
+
+.post-buttons {
+  display: flex;
+  gap: 10px;
+}
